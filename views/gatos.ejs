@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/estilos.css" rel="stylesheet" />
+    <title>VISTAS DE GATOS</title>
+    
+</head>
+<body>
+    <div class="card mb-3">
+        <h1 class="card-title bg1">EJS CATS</h1>
+        <% for (let indice in gatos) { %>
+        <a href=<%=gatos[indice].id %>><img src=<%=gatos[indice].img %> class="card-img-top recuadro" alt=<%=gatos[indice].nombre %>></a>
+            <% } %>
+    
+
+    </div>
+    
+</body>
+</html>
